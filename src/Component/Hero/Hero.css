@@ -1,0 +1,44 @@
+
+/* Desktop default padding */
+.heroTextCol {
+  padding-left: 50px !important;
+}
+
+/* Desktop Image full height */
+.heroImgCol {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroImgCol img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 📱 Tablet & Mobile Styles */
+@media screen and (min-width: 360px) and  (max-width: 576px) {
+    .details h1{
+        font-size: 2.3rem !important;
+    }  
+}
+@media screen  and (max-width: 360px) {
+      .details h1{
+        font-size: 1.8rem !important;
+    } 
+}
+@media (max-width: 991.98px) {
+  .heroTextCol {
+
+    padding: 20px 0 20px 20px !important;
+  }
+
+  .heroImgCol {
+    height: auto;
+  }
+
+  .heroImgCol img {
+    height: auto;
+    object-fit: contain;
+  }
+}
