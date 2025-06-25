@@ -54,17 +54,10 @@ const Service = () => {
   return (
     <div className="container-fluid">
       <div className="container">
-        <div className="icon-design gap-3 d-flex justify-content-center">
-          <div className="iconImg">
-            <img src={dotImg} alt="orangeDot" style={{ width: "20px" }} />
-          </div>
-          <p>My Service</p>
-        </div>
-        <h1 className="text-center fw-bold text-uppercase">Services I offer</h1>
         <div className="row g-4 justify-content-center my-4">
   {serviceData.map((service, index) => (
-    <div className="col-lg-3 col-md-6 col-12" key={index}>
-      <div className="card h-100 border-1 text-center pt-4 px-3">
+    <div className="col-lg-3 col-md-6 col-12 " key={index}>
+      <div className="card h-100 border-1 text-center pt-4 px-3 serviceCard">
         <img
           src={service.img}
           alt={service.title}

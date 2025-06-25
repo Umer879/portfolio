@@ -59,6 +59,9 @@
     background-color: white;
     color: #ff6b00;
 }
+.serviceCard:hover{
+  background-color: #fff5ef;
+}
 @media screen and (max-width: 600px) {
     .rowPadding{
         padding: 15px !important;

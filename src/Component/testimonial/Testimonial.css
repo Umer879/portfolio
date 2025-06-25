@@ -1,0 +1,19 @@
+/* Orange bullets with spacing */
+.swiper-pagination-bullet {
+  background-color: #ff6b00 !important;
+  opacity: 0.4;
+  margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+/* Move the dots down */
+.swiper-pagination {
+  margin-top: 40px;
+  position: static;
+  text-align: center;
+}
