@@ -1,0 +1,53 @@
+.portfolio-card {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-image:hover {
+  transform: scale(1.05);
+}
+/* Top overlay */
+.overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.577);
+  transition: top 0.4s ease;
+}
+/* Bottom detail */
+.card-details {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 80%;
+  padding: 20px;
+  color: white;
+  background: #ff6b00;
+  border-radius: 4px;
+  text-align: center;
+  transition: bottom 0.4s ease;
+}
+
+.portfolio-card:hover .card-details {
+  bottom: 20px; /* show it slightly above bottom */
+}
+
+/* Hover effect */
+.portfolio-card:hover .overlay {
+  top: 0;
+}

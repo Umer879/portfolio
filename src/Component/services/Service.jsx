@@ -1,5 +1,4 @@
 import React from "react";
-import dotImg from "../../assets/particle/orangeDot.png";
 import serviceOne from "../../assets/service/serviceOne.png";
 import serviceTwo from "../../assets/service/serviceTwo.png";
 import serviceThree from "../../assets/service/serviceThree.png";
@@ -57,7 +56,7 @@ const Service = () => {
         <div className="row g-4 justify-content-center my-4">
   {serviceData.map((service, index) => (
     <div className="col-lg-3 col-md-6 col-12 " key={index}>
-      <div className="card h-100 border-1 text-center pt-4 px-3 serviceCard">
+      <div className="card h-100  text-center pt-4 px-3 serviceCard">
         <img
           src={service.img}
           alt={service.title}

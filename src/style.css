@@ -59,6 +59,9 @@
     background-color: white;
     color: #ff6b00;
 }
+.serviceCard,.partnerCol{
+  border: 1px solid #f9caad !important;
+}
 .serviceCard:hover{
   background-color: #fff5ef;
 }
@@ -69,4 +72,7 @@
 }
 .fa-square-check, .location i, .myNavbar, .navbar-nav a:hover{
   color: #ff6b00;
+}
+.partnerCol{
+  border: 1px solid #e99a62;
 }
