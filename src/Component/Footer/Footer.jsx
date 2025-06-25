@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       className="container-fluid footer"
-      style={{backgroundColor: "#101010", color: "white"}}>
+      style={{backgroundColor: "#101010", color: "white", minHeight: '100vh'}}>
       <div className="row d-flex justify-content-between rowPadding row-gap-5"
         style={{ padding: "100px 80px" }}>
         <div className="col-lg-3 col-12 col-sm-6">

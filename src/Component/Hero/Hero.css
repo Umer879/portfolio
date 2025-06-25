@@ -3,19 +3,9 @@
 .heroTextCol {
   padding-left: 50px !important;
 }
-
-/* Desktop Image full height */
-.heroImgCol {
-  height: 100vh;
-  overflow: hidden;
+.hero2{
+  margin: 120px 0 !important;
 }
-
-.heroImgCol img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 /* 📱 Tablet & Mobile Styles */
 @media screen and (min-width: 360px) and  (max-width: 576px) {
     .details h1{

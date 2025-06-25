@@ -1,18 +1,22 @@
 import React from "react";
 import logo from "../../assets/logo/logo.png";
-import './Navbar.css';
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid myNavbar px-4" style={{ background: 'white', height: '20vh' }}>
-        
+    <nav
+      className="navbar navbar-expand-lg py-3"
+      style={{ background: "white"}}
+    >
+      <div className="container-fluid px-lg-5">
         {/* Logo */}
-        <a className="navbar-brand" href="#">
-          <img src={logo} alt="Logo" />
+        <a className="navbar-brand d-flex align-items-center gap-2" href="#">
+          <div className="logo-circle">
+            <img src={logo} alt="" />
+          </div>
         </a>
 
-        {/* Toggler Button */}
+        {/* Toggle button for mobile */}
         <button
           className="navbar-toggler"
           type="button"
@@ -25,42 +29,55 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible Content */}
-        <div className="collapse navbar-collapse justify-content-between" id="navbarContent">
-          
-          {/* Centered Nav Links */}
-          <ul className="navbar-nav custom-nav mx-auto mb-2 mb-lg-0 d-flex gap-lg-4 text-center">
+        {/* Collapsible content */}
+        <div
+          className="collapse navbar-collapse justify-content-between"
+          id="navbarContent"
+        >
+          {/* Center links */}
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-flex gap-lg-4 text-center">
             <li className="nav-item">
-              <a className="nav-link" href="#">Home</a>
+              <a className="nav-link" href="#">
+                Home
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">About</a>
+              <a className="nav-link" href="#">
+                About
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
+              <a className="nav-link" href="#">
+                Services
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Resume</a>
+              <a className="nav-link" href="#">
+                Resume
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Portfolio</a>
+              <a className="nav-link" href="#">
+                Portfolio
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Blog</a>
+              <a className="nav-link" href="#">
+                Blog
+              </a>
             </li>
           </ul>
 
-          {/* Contact Us Button (Right) */}
-          <div className="d-flex justify-content-lg-end justify-content-center">
+          {/* Contact Us button */}
+          <div className="d-flex justify-content-lg-end justify-content-center mt-2 mt-lg-0">
             <button
               type="button"
-              className="btn custom-btn fw-bold"
-              style={{ background: "#ff6b00", color: 'white' }}
+              className="btn custom-btn fw-bold fs-5 py-2 px-4"
+              style={{ background: "#ff6b00", color: "white" }}
             >
               Contact Us
             </button>
           </div>
-
         </div>
       </div>
     </nav>

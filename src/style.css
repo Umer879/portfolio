@@ -15,7 +15,6 @@
   font-weight: bold;
   cursor: pointer;
 }
-
 /* Before and After pseudo-elements for hover effect */
 .custom-btn::before,
 .custom-btn::after {
@@ -28,12 +27,10 @@
   transition: width 0.4s ease;
   z-index: -1;
 }
-
 /* Left side */
 .custom-btn::before {
   left: 0;
 }
-
 /* Right side */
 .custom-btn::after {
   right: 0;
@@ -43,14 +40,6 @@
 .custom-btn:hover::before,
 .custom-btn:hover::after {
   width: 50%;
-}
-
-.custom-btn:hover {
-  color: white;
-}
-
-.myNavbar, .navbar-nav a:hover{
-    color: var(--orange-color);
 }
 /* Footer Social Media Icons  */
 .accounts .box{
@@ -70,14 +59,11 @@
     background-color: white;
     color: #ff6b00;
 }
-.location i{
-    color: #ff6b00;
-}
-.footer{
-    min-height: 100vh;
-}
 @media screen and (max-width: 600px) {
     .rowPadding{
         padding: 15px !important;
     }  
+}
+.fa-square-check, .location i, .myNavbar, .navbar-nav a:hover{
+  color: #ff6b00;
 }
