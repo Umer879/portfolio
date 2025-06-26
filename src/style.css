@@ -91,7 +91,7 @@
   color: #ff6b00;
 }
 .partnerCol{
-  border: 1px solid #e99a62;
+  border: 1px solid #e99a62 !important;
 }
 /* contact us styles  */
 .form-control{
@@ -107,4 +107,6 @@
 .text-orange {
   color: #ff6b00; /* icon color */
 }
-
+button{
+  border: none !important;
+}

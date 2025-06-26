@@ -1,0 +1,22 @@
+/* Smooth collapse animation */
+.custom-navbar-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.custom-navbar-collapse.open {
+  max-height: 500px; /* adjust based on content height */
+}
+/* Active link style */
+.nav-link {
+  color: #333;
+  font-weight: normal;
+  transition: 0.3s ease;
+}
+.nav-link:hover {
+  color: #ff6b00;
+}
+.nav-link.active {
+  color: #ff6b00 !important;
+  font-weight: bold;
+}

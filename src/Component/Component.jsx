@@ -12,7 +12,6 @@ import Footer from './Footer/Footer'
 const Component = () => {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Heading title={'My Service'} heading={'Services I offer'} />
       <Service />
