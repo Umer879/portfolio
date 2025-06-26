@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       className="container-fluid footer"
-      style={{backgroundColor: "#101010", color: "white", minHeight: '100vh'}}>
+      style={{backgroundColor: "#101010", color: "white", height: 'auto'}}>
       <div className="row d-flex justify-content-between rowPadding row-gap-5"
         style={{ padding: "100px 80px" }}>
         <div className="col-lg-3 col-12 col-sm-6">
@@ -104,7 +104,7 @@ const Footer = () => {
       <div className="line">
         <hr />
       </div>
-      <div className="policy">
+      <div className="policy py-4">
         <div className="row d-flex row-gap-4 text-center">
           <div className="col-sm-6 col-12">All rights reserved © 2023 Credesign</div>
           <div className="col-sm-3 col-6">
