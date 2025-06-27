@@ -1,0 +1,1 @@
+.custom-navbar-collapse{max-height:0;overflow:hidden;transition:max-height .5s ease}.custom-navbar-collapse.open{max-height:500px}.nav-link{color:var(--dark-text);font-weight:400;transition:color .3s ease,font-weight .3s ease}.nav-link:hover,.nav-link.active{color:var(--orange-color)!important}.nav-link.active{font-weight:700}
