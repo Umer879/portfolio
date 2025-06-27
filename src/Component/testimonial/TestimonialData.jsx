@@ -1,7 +1,7 @@
 import React from "react";
-import one from '../../assets/testimonial/one.png'
-import two from '../../assets/testimonial/two.png'
-import three from '../../assets/testimonial/three.png'
+import one from '../../assets/testimonial/one.webp'
+import two from '../../assets/testimonial/two.webp'
+import three from '../../assets/testimonial/three.webp'
 const testimonialData = [
   {
     name: "Robert E. Wolf",

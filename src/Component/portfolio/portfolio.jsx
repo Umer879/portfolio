@@ -1,13 +1,13 @@
 import React from "react";
-import one from "../../assets/portfolio/portfolioOne.png";
-import Two from "../../assets/portfolio/portfolioTwo.png";
-import Three from "../../assets/portfolio/portfolioThree.png";
-import Four from "../../assets/portfolio/portfolioFour.png";
-import Five from "../../assets/portfolio/portfolioFive.png";
-import Six from "../../assets/portfolio/portfolioSix.png";
-import Seven from "../../assets/portfolio/portfolioSeven.png";
-import Eight from "../../assets/portfolio/portfolioEight.png";
-import "./Portfolio.css"; // 👈 Make sure to create and import this
+import one from "../../assets/portfolio/portfolioOne.avif";
+import Two from "../../assets/portfolio/portfolioTwo.avif";
+import Three from "../../assets/portfolio/portfolioThree.avif";
+import Four from "../../assets/portfolio/portfolioFour.avif";
+import Five from "../../assets/portfolio/portfolioFive.avif";
+import Six from "../../assets/portfolio/portfolioSix.avif";
+import Seven from "../../assets/portfolio/portfolioSeven.avif";
+import Eight from "../../assets/portfolio/portfolioEight.avif";
+import "./Portfolio.css"; 
 
 const portfolioData = [
   { img: one,

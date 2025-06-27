@@ -1,5 +1,5 @@
 import React from 'react'
-import dotImg from "../../assets/particle/orangeDot.png";
+import dotImg from "../../assets/particle/orangeDot.webp";
 const Heading = ({title, heading}) => {
   return (
     <div className="margin" style={{margin: '70px 0 30px 0'}}>

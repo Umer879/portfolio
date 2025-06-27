@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
-import logo from "../../assets/logo/logo.png";
-import "./Navbar.css";
+import logo from "../../assets/logo/logo.webp";
 import { NavLink } from "react-router-dom";
-
+import './Navbar.css'
 const Navbar = () => {
   const collapseRef = useRef(null);
 

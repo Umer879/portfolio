@@ -1,12 +1,12 @@
 import React from "react";
-import serviceOne from "../../assets/service/serviceOne.png";
-import serviceTwo from "../../assets/service/serviceTwo.png";
-import serviceThree from "../../assets/service/serviceThree.png";
-import serviceFour from "../../assets/service/serviceFour.png";
-import serviceFive from "../../assets/service/serviceFive.png";
-import serviceSix from "../../assets/service/serviceSix.png";
-import serviceSeven from "../../assets/service/serviceSeven.png";
-import serviceEight from "../../assets/service/serviceEight.png";
+import serviceOne from "../../assets/service/serviceOne.webp";
+import serviceTwo from "../../assets/service/serviceTwo.webp";
+import serviceThree from "../../assets/service/serviceThree.webp";
+import serviceFour from "../../assets/service/serviceFour.webp";
+import serviceFive from "../../assets/service/serviceFive.webp";
+import serviceSix from "../../assets/service/serviceSix.webp";
+import serviceSeven from "../../assets/service/serviceSeven.webp";
+import serviceEight from "../../assets/service/serviceEight.webp";
 const serviceData = [
   {
     img: serviceOne,

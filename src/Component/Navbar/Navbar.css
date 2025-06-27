@@ -1,22 +1,25 @@
-/* Smooth collapse animation */
+/* ==================== NAVBAR ==================== */
 .custom-navbar-collapse {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
+
 .custom-navbar-collapse.open {
-  max-height: 500px; /* adjust based on content height */
+  max-height: 500px;
 }
-/* Active link style */
+
 .nav-link {
-  color: #333;
+  color: var(--dark-text);
   font-weight: normal;
-  transition: 0.3s ease;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
-.nav-link:hover {
-  color: #ff6b00;
-}
+
+.nav-link:hover,
 .nav-link.active {
-  color: #ff6b00 !important;
+  color: var(--orange-color) !important;
+}
+
+.nav-link.active {
   font-weight: bold;
 }

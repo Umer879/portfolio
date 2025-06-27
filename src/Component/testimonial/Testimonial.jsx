@@ -1,10 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import "swiper/css";
+
+// ✅ Only import required Swiper CSS
 import "swiper/css/pagination";
+import './Testimonial.css'
 import testimonialData from "./TestimonialData";
-import "./Testimonial.css";
+
 const Testimonials = () => {
   return (
     <section className="py-5" style={{ background: "#fff" }}>

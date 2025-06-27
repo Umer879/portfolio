@@ -5,10 +5,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
-import one from '../../assets/partner/partnerOne.png';
-import Two from '../../assets/partner/partnerTwo.png';
-import Three from '../../assets/partner/partnerThree.png';
-import Five from '../../assets/partner/partnerFive.png';
+import one from '../../assets/partner/partnerOne.webp';
+import Two from '../../assets/partner/partnerTwo.webp';
+import Three from '../../assets/partner/partnerThree.webp';
+import Five from '../../assets/partner/partnerFive.webp';
 
 const brands = [
   { img: one },

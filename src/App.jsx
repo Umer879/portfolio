@@ -1,32 +1,31 @@
-import React from 'react';
-import Navbar from './Component/Navbar/Navbar.jsx';
-import { HashRouter as Router,  Routes, Route } from 'react-router-dom';
-// main.jsx or App.jsx
-import './style.css'; // ✅ Correct relative path
+import React, { Suspense, lazy } from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import './style.css';
 
-import Home from './Component/Pages/Home.jsx';
-import About from './Component/Pages/About.jsx';
-import Services from './Component/Pages/Service.jsx';
-import Resume from './Component/Pages/Resume.jsx';
-import Portfolio from './Component/Pages/Portfolio.jsx';
-import Blog from './Component/Pages/Blog.jsx';
-import Contact from './Component/Pages/Contact.jsx';
+const Navbar = lazy(() => import('./Component/Navbar/Navbar.jsx'));
+const Home = lazy(() => import('./Component/Pages/Home.jsx'));
+const About = lazy(() => import('./Component/Pages/About.jsx'));
+const Services = lazy(() => import('./Component/Pages/Service.jsx'));
+const Resume = lazy(() => import('./Component/Pages/Resume.jsx'));
+const Portfolio = lazy(() => import('./Component/Pages/Portfolio.jsx'));
+const Blog = lazy(() => import('./Component/Pages/Blog.jsx'));
+const Contact = lazy(() => import('./Component/Pages/Contact.jsx'));
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
-
-      {/* Page Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Services />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 };

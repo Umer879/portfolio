@@ -1,7 +1,7 @@
 import React from "react";
-import one from "../../assets/blog/blogOne.png";
-import Two from "../../assets/blog/blogTwo.png";
-import Three from "../../assets/blog/blogThree.png";
+import one from "../../assets/blog/blogOne.avif";
+import Two from "../../assets/blog/blogTwo.avif";
+import Three from "../../assets/blog/blogThree.avif";
 
 const blogData = [
   {

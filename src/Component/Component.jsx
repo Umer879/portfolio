@@ -1,17 +1,18 @@
-import React from 'react'
-import Navbar from './Navbar/Navbar'
-import Hero from './Hero/Hero'
-import Service from './services/Service'
-import Heading from './heading/Heading'
-import Testimonial from './testimonial/Testimonial'
-import Portfolio from './portfolio/portfolio'
-import Partaners from './partaners/Partaners'
-import Blog from './Blog/Blog'
-import Contact from './Contact/Contact'
-import Footer from './Footer/Footer'
+import React, { Suspense, lazy } from 'react';
+const Hero = lazy(() => import('./Hero/Hero'));
+const Service = lazy(() => import('./services/Service'));
+const Heading = lazy(() => import('./heading/Heading'));
+const Testimonial = lazy(() => import('./testimonial/Testimonial'));
+const Portfolio = lazy(() => import('./portfolio/portfolio'));
+const Partaners = lazy(() => import('./partaners/Partaners'));
+const Skills = lazy(() => import('./Skills/Skill'));
+const Blog = lazy(() => import('./Blog/Blog'));
+const Contact = lazy(() => import('./Contact/Contact'));
+const Footer = lazy(() => import('./Footer/Footer'));
+
 const Component = () => {
   return (
-    <div>
+    <Suspense fallback={null}>
       <Hero />
       <Heading title={'My Service'} heading={'Services I offer'} />
       <Service />
@@ -21,13 +22,15 @@ const Component = () => {
       <Portfolio />
       <Heading title={'Partners'} heading={'REPUTED PARTNER'} />
       <Partaners />
-      <Heading title={"My Blog"} heading={'LATEST BLOG'} />
+      <Heading title={'My Skills'} heading={'Skills Section'} />
+      <Skills />
+      <Heading title={'My Blog'} heading={'LATEST BLOG'} />
       <Blog />
       <Heading title={'My Contact'} heading={'I WANT TO HEAR FROM YOU'} />
       <Contact />
-       <Footer />
-    </div>
-  )
-}
+      <Footer />
+    </Suspense>
+  );
+};
 
-export default Component
+export default Component;

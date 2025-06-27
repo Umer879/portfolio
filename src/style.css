@@ -1,9 +1,42 @@
-:root{
-    --orange-color: #ff6b00;
-    --black-color: #101010;
-    --secondary-black-color: #606060;
-    --light-color: #fff5ef;
+/* ==================== GLOBAL RESET ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* ==================== VARIABLES ==================== */
+:root {
+  --orange-color: #ff6b00;
+  --black-color: #101010;
+  --secondary-black-color: #606060;
+  --light-color: #fff5ef;
+  --dark-text: #333;
+  --skill-border-color: #f39c12;
+  --skill-line-color: #e67e22;
+  --hero-padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== GLOBAL / SHARED ==================== */
 .custom-btn {
   position: relative;
   background-color: var(--orange-color);
@@ -15,7 +48,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-/* Before and After pseudo-elements for hover effect */
+
 .custom-btn::before,
 .custom-btn::after {
   content: "";
@@ -27,51 +60,56 @@
   transition: width 0.4s ease;
   z-index: -1;
 }
-/* Left side */
-.custom-btn::before {
-  left: 0;
-}
-/* Right side */
-.custom-btn::after {
-  right: 0;
-}
 
-/* Hover Effect */
+.custom-btn::before { left: 0; }
+.custom-btn::after { right: 0; }
+
 .custom-btn:hover::before,
 .custom-btn:hover::after {
   width: 50%;
 }
-/* Footer Social Media Icons  */
-.accounts .box{
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background-color: #ff6b00;
-    cursor: pointer;
-    border: 2px solid #ff6b00;
-    transition: all ease 0.3s;
+
+.accounts .box {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--orange-color);
+  cursor: pointer;
+  border: 2px solid var(--orange-color);
+  transition: all ease 0.3s;
 }
-.accounts .box:hover{
-    background-color: white;
-    color: #ff6b00;
+
+.accounts .box:hover {
+  background-color: white;
+  color: var(--orange-color);
 }
-.serviceCard,.partnerCol{
+
+.serviceCard,
+.partnerCol {
   border: 1px solid #f9caad !important;
 }
-.serviceCard:hover{
-  background-color: #fff5ef;
+
+.serviceCard:hover {
+  background-color: var(--light-color);
 }
-.blogLink{
+
+.partnerCol {
+  border: 1px solid #e99a62 !important;
+}
+
+.blogLink {
   padding: 6px 0 !important;
 }
-.blogImg{
+
+.blogImg {
   position: relative;
 }
-.blogHover{
+
+.blogHover {
   width: 100%;
   height: 56%;
   border-top-left-radius: 4px;
@@ -79,34 +117,40 @@
   position: absolute;
   transition: all ease-in-out 0.3s;
 }
-.blogHover:hover{
+
+.blogHover:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
-@media screen and (max-width: 600px) {
-    .rowPadding{
-        padding: 15px !important;
-    }  
+
+@media (max-width: 600px) {
+  .rowPadding {
+    padding: 15px !important;
+  }
 }
-.fa-square-check, .location i, .myNavbar, .navbar-nav a:hover, .blogTitle:hover{
-  color: #ff6b00;
+
+.fa-square-check,
+.location i,
+.myNavbar,
+.navbar-nav a:hover,
+.blogTitle:hover {
+  color: var(--orange-color);
 }
-.partnerCol{
-  border: 1px solid #e99a62 !important;
-}
-/* contact us styles  */
-.form-control{
+
+.form-control {
   padding: 20px !important;
   border: 1px solid #f9caad !important;
 }
+
 .icon-wrapper {
   width: 50px;
   height: 50px;
-  background-color: #fff5ef; /* light orange background */
+  background-color: var(--light-color);
 }
 
 .text-orange {
-  color: #ff6b00; /* icon color */
+  color: var(--orange-color);
 }
-button{
+
+button {
   border: none !important;
 }

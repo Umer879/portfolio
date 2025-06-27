@@ -1,7 +1,7 @@
 import React from "react";
 // import '../../../style.css';
 
-import contactImg from "../../../assets/heroImg/contactImg.png";
+import contactImg from "../../../assets/heroImg/contactImg.avif";
 const ContactForm = () => {
   return (
     <div className="container-fluid">

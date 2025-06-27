@@ -1,25 +1,26 @@
-
-/* Desktop default padding */
+/* ==================== HERO SECTION ==================== */
 .heroTextCol {
-  padding-left: 50px !important;
+  padding-left: var(--hero-padding-left) !important;
 }
-.hero2{
+
+.hero2 {
   margin: 120px 0 !important;
 }
-/* 📱 Tablet & Mobile Styles */
-@media screen and (min-width: 360px) and  (max-width: 576px) {
-    .details h1{
-        font-size: 2.3rem !important;
-    }  
+
+@media (max-width: 576px) and (min-width: 360px) {
+  .details h1 {
+    font-size: 2.3rem !important;
+  }
 }
-@media screen  and (max-width: 360px) {
-      .details h1{
-        font-size: 1.8rem !important;
-    } 
+
+@media (max-width: 360px) {
+  .details h1 {
+    font-size: 1.8rem !important;
+  }
 }
+
 @media (max-width: 991.98px) {
   .heroTextCol {
-
     padding: 20px 0 20px 20px !important;
   }
 
