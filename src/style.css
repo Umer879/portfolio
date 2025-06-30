@@ -11,7 +11,9 @@ body {
   min-height: 100vh;
 }
 
-
+.custom-nav .nav-link {
+  color: white;
+}
 /* ==================== VARIABLES ==================== */
 :root {
   --orange-color: #ff6b00;
@@ -23,18 +25,6 @@ body {
   --skill-line-color: #e67e22;
   --hero-padding-left: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==================== GLOBAL / SHARED ==================== */
 .custom-btn {
@@ -61,8 +51,12 @@ body {
   z-index: -1;
 }
 
-.custom-btn::before { left: 0; }
-.custom-btn::after { right: 0; }
+.custom-btn::before {
+  left: 0;
+}
+.custom-btn::after {
+  right: 0;
+}
 
 .custom-btn:hover::before,
 .custom-btn:hover::after {
@@ -122,12 +116,6 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 600px) {
-  .rowPadding {
-    padding: 15px !important;
-  }
-}
-
 .fa-square-check,
 .location i,
 .myNavbar,
@@ -153,4 +141,36 @@ body {
 
 button {
   border: none !important;
+}
+.cta-bg {
+  background-image: url("/src/assets/particle/conactCtaBg.avif");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  box-shadow: 0px 0px 4px #ff6a00b4;
+  border-radius: 8px;
+}
+.education:hover {
+  transition: all ease-in 0.2s;
+  color: var(--light-color) !important;
+  background-color: var(--orange-color) !important;
+}
+@media (max-width: 600px) {
+  .rowPadding {
+    padding: 15px !important;
+  }
+  .text span {
+    display: block;
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 350px) {
+    .text h5{
+    font-size: 16px;
+  }
 }

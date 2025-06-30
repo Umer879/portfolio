@@ -1,31 +1,29 @@
 // SkillsLine.js
-import React, { useEffect, useState } from 'react';
-import awesome from '../../assets/skills/awesome.webp'
-import google from '../../assets/skills/google.webp'
-import microsoft from '../../assets/skills/microsoft.webp'
-import meta from '../../assets/skills/meta.webp'
-import copilot from '../../assets/skills/copilot.webp'
-import slack from '../../assets/skills/slack.webp'
-import pixray from '../../assets/skills/pixray.webp'
-import stability from '../../assets/skills/stability.webp'
-import './Skill.css'
+import React, { useEffect, useState } from "react";
+import html from "../../assets/skills/html.avif";
+import css from "../../assets/skills/css.avif";
+import js from "../../assets/skills/js.avif";
+import bootstrap from "../../assets/skills/bootstrap.avif";
+import tailwind from "../../assets/skills/tailwind.avif";
+import react from "../../assets/skills/react.avif";
+import "./Skill.css";
 
 const skills = [
-  { name: 'Font Awesome', img: awesome },
-  { name: 'Meta', img: meta },
-  { name: 'Google', img: google },
-  { name: 'Microsoft', img: microsoft },
-{ name: 'Slack', img: slack},
-  { name: 'Copilot', img: copilot },
-  { name: 'Stability AI', img: stability},
-  { name: 'Pixray', img: pixray },
-  { name: 'Meta', img: meta },
-  { name: 'Google', img: google },
-  { name: 'Microsoft', img: microsoft },
-  { name: 'Slack', img: slack },
-  { name: 'Copilot', img: copilot },
-  { name: 'Stability AI', img: stability },
-  { name: 'Pixray', img: pixray },
+  { name: "Meta", img: html },
+  { name: "Google", img: css },
+  { name: "Microsoft", img: js },
+  { name: "Slack", img: bootstrap },
+  { name: "Copilot", img: tailwind },
+  { name: "Stability AI", img: react },
+   { name: "Meta", img: html },
+  { name: "Google", img: css },
+  { name: "Microsoft", img: js },
+  { name: "Slack", img: bootstrap },
+  { name: "Copilot", img: tailwind },
+  { name: "Stability AI", img: react },
+  { name: "Copilot", img: html },
+  { name: "Stability AI", img: css },
+  { name: "Pixray", img: js },
 ];
 
 const SkillsLine = () => {
@@ -33,8 +31,8 @@ const SkillsLine = () => {
 
   useEffect(() => {
     const handleResize = () => setIsDesktop(window.innerWidth >= 992);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (

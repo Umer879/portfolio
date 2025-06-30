@@ -1,14 +1,13 @@
 import React from "react";
 // import '../../../style.css';
+import PageHeading from "../../heading/PageHeading";
 
 import contactImg from "../../../assets/heroImg/contactImg.avif";
 const ContactForm = () => {
   return (
     <div className="container-fluid">
       <div className="container">
-        <h1 className="text-center" style={{ margin: "100px 0 310px 0" }}>
-          Contact Us
-        </h1>
+    <PageHeading title={'Contact'} heading={'My Contact'} />
         <div className="row my-5 d-flex justify-content-between">
           <div className="col-lg-5 partnerCol col-12  p-5 rounded-3 text-center">
             <img src={contactImg} alt="" />
