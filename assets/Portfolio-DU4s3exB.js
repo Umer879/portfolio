@@ -1,0 +1,1 @@
+import{j as o}from"./index-lHp3_r5F.js";import{P as r}from"./PageHeading-DQ6pt_eJ.js";import t from"./portfolio-CgIpGbPh.js";import i from"./Footer-CBTR7srV.js";import"./react-DJG_os-6.js";import"./orangeDot-BMCDJR6s.js";const x=()=>o.jsxs("div",{children:[o.jsx(r,{title:"My Portfolio",heading:"VISIT MY PORTFOLIO"}),o.jsx(t,{}),o.jsx(i,{})]});export{x as default};
