@@ -6,7 +6,35 @@ import tailwind from "../../../assets/skills/tailwind.avif";
 import sketch from "../../../assets/skills/sketch.avif";
 import html from '../../../assets/skills/html.avif'
 import css from '../../../assets/skills/css.avif'
-
+import tablogoOne from  '../../../assets/logo/One.avif'
+import tablogoTwo from '../../../assets/logo/Two.avif'
+import tablogoThree from '../../../assets/logo/Three.avif'
+const experiences = [
+  {
+    company: "Okuneva Ltd.",
+    role: "Senior Product Designer",
+    duration: "2 Years",
+    from: "Jan 2021",
+    to: "Running",
+    logo: tablogoOne,
+  },
+  {
+    company: "Braun PLC.",
+    role: "Product Designer",
+    duration: "7 Years",
+    from: "Jan 2014",
+    to: "Dec 2021",
+    logo: tablogoTwo,
+  },
+  {
+    company: "Bruen Ltd.",
+    role: "User Interface Designer",
+    duration: "4 Years",
+    from: "Jan 2010",
+    to: "Dec 2014",
+    logo: tablogoThree,
+  },
+];
 const educationData = [
       {
     img: html,
@@ -44,7 +72,7 @@ const Education = () => {
     <div className="container-fluid my-5">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-lg-6 col-12">
             <div className="icon-design d-flex gap-3">
               <div className="iconImg">
                 <img src={dotImg} alt="orangeDot" width={20} />
@@ -71,19 +99,36 @@ const Education = () => {
               ))}
             </div>
           </div>
-          <div className="col-lg-7">
-           <div className="row">
-            <div className="col-6">
-                 <button className="py-2 px-3 rounded fw-bold fs-5" style={{background: '#ff6b00', color: 'white'}}>
+          <div className="col-lg-6 col-12">
+           <button className="py-2 px-3 rounded w-100 fw-bold fs-5" style={{background: '#ff6b00', color: 'white'}}>
                 Professional Experience
             </button>
+
+           {experiences.map((exp, index) => (
+        <div key={index} className="d-flex align-items-start experience mb-5" style={{marginTop: '100px'}}>
+          {/* Logo */}
+          <div className="me-4">
+            <div
+              className="rounded-circle border border-warning d-flex align-items-center justify-content-center"
+              style={{ width: "70px", height: "70px", fontSize: "24px" }}
+            >
+              <img src={exp.logo} alt={exp.company}/>
             </div>
-            <div className="col-6">
-                <button className="py-2 px-4 education rounded w-100 fw-bold fs-5" style={{background: 'transparent'}}>
-             Education
-            </button>
+          </div>
+
+          {/* Info */}
+          <div className="w-100">
+            <div className="d-flex justify-content-between align-items-center">
+              <h5 className="mb-1 fw-bold">{exp.company}</h5>
+              <span className="text-warning fw-bold">{exp.duration}</span>
             </div>
-           </div>
+            <p className="text-muted mb-1">{exp.role}</p>
+            <p className="mb-0">
+              {exp.from} - {exp.to}
+            </p>
+          </div>
+        </div>
+      ))}
           </div>
         </div>
       </div>

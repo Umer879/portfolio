@@ -168,8 +168,13 @@ button {
     display: block;
     padding: 0 !important;
   }
+  .experience{
+    display: flex;
+    flex-wrap: wrap !important;
+  }
 }
 @media screen and (max-width: 350px) {
+
     .text h5{
     font-size: 16px;
   }
